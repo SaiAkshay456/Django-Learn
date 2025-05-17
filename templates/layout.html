@@ -1,4 +1,5 @@
 {% load static %}
+{% load static tailwind_tags %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,10 +8,11 @@
     {% block title %}
     Default Value
     {% endblock title %}
+    {% tailwind_css %}
     <link rel="stylesheet" href="{% static 'blogcss/style.css'%}">
 </head>
 <body>
-    <h1>
+    <h1 class="bg-amber-400">
         {% block content %}{% endblock content %}
     </h1>
     <h1>{% block sentence %}{% endblock sentence %}</h1>
