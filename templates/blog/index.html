@@ -1,16 +1,14 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
+{% extends "layout.html" %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="{% static 'blogcss/style.css' %}">
-</head>
+{% block title %} 
+APP
+{% endblock title %}
 
-<body>
-    <h1>Welcome to Django! I Am Learning Django</h1>
-</body>
+{% block content %}
+Welcome To My page
+{% endblock content %}
 
-</html>
+
+{% block sentence %}
+Hi how are you!
+{% endblock sentence %}
