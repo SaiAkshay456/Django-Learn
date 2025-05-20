@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+
+{% block title %}
+Users Page
+{% endblock title %}
+
+
+{% block content %}
+
+<div class="grid grid-cols-3 gap-4 m-4">
+{% for user in users  %}
+   <li>{{ user.first_name }}</li>
+   <li>{{ user.last_name }}</li>
+   <img src="{{user.profile_photo.url}}" alt="image">
+{% endfor %}
+</div>
+
+{% endblock content %}
