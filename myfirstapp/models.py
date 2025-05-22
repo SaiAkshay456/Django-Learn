@@ -9,6 +9,7 @@ class User(models.Model):
     email=models.EmailField(unique=True)
     password=models.CharField(max_length=32)
     profile_photo=models.ImageField(upload_to="profile_images/")
+    description=models.TextField(default="")
 
     def __str__(self):
         return self.first_name

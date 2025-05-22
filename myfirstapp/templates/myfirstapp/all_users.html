@@ -13,6 +13,7 @@ Users Page
    <li>{{ user.first_name }}</li>
    <li>{{ user.last_name }}</li>
    <img src="{{user.profile_photo.url}}" alt="image">
+   <a href="{% url 'user_detail' user.id%}">View Details</a>
 {% endfor %}
 </div>
 
