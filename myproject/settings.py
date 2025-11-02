@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'myfirstapp',
     'tailwind',
     'theme',
+    'rest_framework',
+    "bookings",
     'django_browser_reload'
 ]
 

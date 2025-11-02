@@ -18,7 +18,7 @@ class User(models.Model):
 
 
 #http://localhost:8000/media/profile_images/photo.jpg
-
+#one to many relationships
 class UserReview(models.Model):
 
     userr=models.ForeignKey(User,on_delete=models.CASCADE,related_name='user_review')
